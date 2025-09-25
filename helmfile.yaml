@@ -1,0 +1,13 @@
+releases:
+  - name: reservation
+    namespace: kube-ms
+    chart: ./reservation/helm
+    wait: true
+    installed: true
+    version: "0.0.1-SNAPSHOT"
+  - name: user
+    namespace: kube-ms
+    chart: ./user/helm
+    wait: true
+    installed: true
+    version: "0.0.1-SNAPSHOT"
